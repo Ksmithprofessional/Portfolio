@@ -1,0 +1,57 @@
+.header-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.header-image img {
+  height: 100vh;
+}
+
+.header-image .image-content {
+  position: absolute;
+  width: 100vw;
+  margin: 0 auto;
+  text-align: center;
+  top: 40%;
+}
+
+.header-image .scroll-down {
+  position: absolute;
+  width: 100vw;
+  margin: 0 auto;
+  text-align: center;
+  bottom: 20px;
+}
+
+#portfolio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 20px;
+  width: 85vw;
+  margin: 15px auto;
+}
+
+#portfolio img {
+  width: 85vw;
+}
+
+#contact {
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.top {
+  width: 85vw;
+  margin: 10px auto;
+  text-align: center;
+}
+
+body {
+  background-color: #272626;
+  color: #d8d6d6;
+}
+/*# sourceMappingURL=base.css.map */
