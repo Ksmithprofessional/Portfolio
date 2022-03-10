@@ -1,0 +1,12 @@
+@media screen and (min-width: 576px) {
+  #portfolio {
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  #portfolio img {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=media-queries.css.map */

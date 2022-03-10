@@ -7,6 +7,7 @@
     <title>Karl Smith's portfolio</title>
     <link rel="stylesheet" href="css/Normalise.css">
     <link rel="stylesheet" href="css/base.css">
+    <script src="https://kit.fontawesome.com/cc1e8c8726.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&display=swap" rel="stylesheet"> 
@@ -16,15 +17,25 @@
 
     <!-- side nav bar -->
     <nav>
-        <!-- logo -->
 
-        <a href="html/about-me.html"> About Me </a>
-        <a href="#portfolio"> My Portfolio </a>
-        <a href="html/coding-examples.html"> Coding Examples </a>
-        <a href="html/scs-scheme.html"> SCS Scheme </a>
-        <a href="#contact"> Contact Me </a>
+        <div class="nav-menu">
+            <a href="#"><i class="fa-solid fa-bars fa-2xl"></i></a>
+        </div>
 
-        <!-- social media links -->
+        <div class="nav-links">
+            <!-- logo -->
+
+            <a href="html/about-me.html"> About Me </a>
+            <a href="#portfolio"> My Portfolio </a>
+            <a href="html/coding-examples.html"> Coding Examples </a>
+            <a href="html/scs-scheme.html"> SCS Scheme </a>
+            <a href="#contact"> Contact Me </a>
+
+            <!-- social media links -->
+
+            <i class="fab fa-github-square"></i>
+
+        </div>
 
 
     </nav>
@@ -40,99 +51,107 @@
 
         <div class="scroll-down">
             <p>Scroll Down</p>
+            <i class="fa-solid fa-angle-down fa-2xl"></i>
         </div>
     </div>
 
 
     <!-- project cards -->
 
-    <div id="portfolio">
-        
-        <div>
+    <div class="background-1">
+        <div id="portfolio">
+            
+            <div class="project">
 
-            <a href="#"><img src="images/radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.jpg" alt="Project one"></a>
-            <h3>Project One</h3>
-            <a href="#"><p>View Project</p></a>
+                <a href="#"><img src="images/radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.jpg" alt="Project one"></a>
+                <h3>Project One</h3>
+                <a href="#"><p>View Project <i class="fas fa-arrow-right"></i></p></a>
+            </div>
+
+            <div class="project">
+
+                <a href="#"><img src="images/radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.jpg" alt="Project two"></a>
+                <h3>Project Two</h3>
+                <a href="#"><p>View Project <i class="fas fa-arrow-right"></i></p></a>
+            </div>
+
+            <div class="project">
+
+                <a href="#"><img src="images/radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.jpg" alt="Project Three"></a>
+                <h3>Project Three</h3>
+                <a href="#"><p>View Project <i class="fas fa-arrow-right"></i></p></a>
+            </div>
+
+            <div class="project">
+
+                <a href="#"><img src="images/radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.jpg" alt="Project Four"></a>
+                <h3>Project Four</h3>
+                <a href="#"><p>View Project <i class="fas fa-arrow-right"></i></p></a>
+            </div>
+
+            <div class="project">
+
+                <a href="#"><img src="images/radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.jpg" alt="Project Five"></a>
+                <h3>Project Five</h3>
+                <a href="#"><p>View Project <i class="fas fa-arrow-right"></i></p></a>
+            </div>
+
+            <div class="project">
+
+                <a href="#"><img src="images/radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.jpg" alt="Project Six"></a>
+                <h3>Project Six</h3>
+                <a href="#"><p>View Project <i class="fas fa-arrow-right"></i></p></a>
+            </div>
+
         </div>
-
-        <div>
-
-            <a href="#"><img src="images/radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.jpg" alt="Project two"></a>
-            <h3>Project Two</h3>
-            <a href="#"><p>View Project</p></a>
-        </div>
-
-        <div>
-
-            <a href="#"><img src="images/radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.jpg" alt="Project Three"></a>
-            <h3>Project Three</h3>
-            <a href="#"><p>View Project</p></a>
-        </div>
-
-        <div>
-
-            <a href="#"><img src="images/radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.jpg" alt="Project Four"></a>
-            <h3>Project Four</h3>
-            <a href="#"><p>View Project</p></a>
-        </div>
-
-        <div>
-
-            <a href="#"><img src="images/radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.jpg" alt="Project Five"></a>
-            <h3>Project Five</h3>
-            <a href="#"><p>View Project</p></a>
-        </div>
-
-        <div>
-
-            <a href="#"><img src="images/radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.jpg" alt="Project Six"></a>
-            <h3>Project Six</h3>
-            <a href="#"><p>View Project</p></a>
-        </div>
-
     </div>
 
 
     <!-- contact form -->
 
-    <div id="contact">
-    
-        <h3>Get in touch</h3>
-        <p>If you would like to contact me, please do over at:</p>
-        <a href="mailto:k_m_s@hotmail.co.uk">k_m_s@hotmail.co.uk</a>
-        <p>Or, you can use the contact form and i'll get back to you as soon as i can</p>
+    <div class="background-2">
+        <div id="contact">
 
-    </div>
+            <div class="get-in-touch">
+                <h3>Get in touch</h3>
+                <p>If you would like to contact me, please do over at:</p>
+                <a href="mailto:k_m_s@hotmail.co.uk">k_m_s@hotmail.co.uk</a>
+                <p>Or, you can use the contact form and i'll get back to you as soon as i can</p>
 
-    <form>
+            </div>
 
-        <fieldset>
+            <form>
 
-            <span class="fname">
-                <input type="text" id="fname" name="fname" placeholder="First Name" required>
-            </span>
+                <fieldset>
 
-            <span class="lname">
-                <input type="text" id="lname" name="lname" placeholder="Last Name">
-            </span>
+                    <span class="fname">
+                        <input type="text" id="fname" name="fname" placeholder="First Name" required>
+                    </span>
 
-            <span class="email">
-                <input type="text" id="email" name="email" placeholder="Email address" required>
-            </span>
+                    <span class="lname">
+                        <input type="text" id="lname" name="lname" placeholder="Last Name">
+                    </span>
 
-            <span class="subject">
-                <input type="text" id="subject" name="subject" placeholder="Subject">
-            </span>
+                    <span class="email">
+                        <input type="text" id="email" name="email" placeholder="Email address" required>
+                    </span>
 
-            <textarea id="message" placeholder="Message" required></textarea>
+                    <span class="subject">
+                        <input type="text" id="subject" name="subject" placeholder="Subject">
+                    </span>
 
-            <input type="submit" value="Submit">
+                    <textarea id="message" placeholder="Message" required></textarea>
 
-        </fieldset>
-    </form>
+                    <input type="submit" value="Submit">
 
-    <div class="top">
-        <a href="#">Back to top</a>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="top">
+            <a href="#"><i class="fa-solid fa-angle-up fa-2xl"></i> <br>
+            Back to top</a>
+        </div>
     </div>
 
 </body>

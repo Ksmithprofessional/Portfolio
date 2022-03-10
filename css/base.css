@@ -1,3 +1,28 @@
+nav {
+  position: relative;
+}
+
+.nav-links {
+  display: none;
+}
+
+.nav-menu {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  position: fixed;
+  z-index: 1;
+  border: 1px solid black;
+  border-radius: 5%;
+  top: 10px;
+  left: 10px;
+}
+
+.fa-bars {
+  padding-top: 22px;
+  padding-left: 10px;
+}
+
 .header-image {
   position: relative;
   overflow: hidden;
@@ -23,6 +48,10 @@
   bottom: 20px;
 }
 
+.background-1 {
+  background-color: #e1e1e1;
+}
+
 #portfolio {
   display: -ms-grid;
   display: grid;
@@ -32,26 +61,114 @@
       grid-template-columns: 1fr;
   grid-gap: 20px;
   width: 85vw;
-  margin: 15px auto;
+  margin: -4px auto 0;
+  padding: 15px 0;
 }
 
 #portfolio img {
   width: 85vw;
 }
 
+#portfolio .project {
+  background-color: #272626;
+  color: white;
+  text-align: center;
+}
+
 #contact {
+  display: -ms-grid;
+  display: grid;
+}
+
+.get-in-touch {
+  margin: 0 auto;
+  width: 85vw;
+  padding: 12px;
+  text-align: center;
+}
+
+form {
   width: 85vw;
   margin: 0 auto;
 }
 
+fieldset {
+  border-style: none;
+  margin: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#message,
+#subject,
+#email {
+  width: 100%;
+}
+
+#fname,
+#lname {
+  width: 48%;
+}
+
+#fname,
+#lname,
+#subject,
+#email,
+#message {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px;
+  margin: 5px;
+  margin-left: 0;
+  background-color: #e0e0e0;
+  border-style: none;
+  border-radius: 2%;
+}
+
+input[type="submit"] {
+  padding: 5px 25px;
+  border: 2px solid black;
+  border-radius: 2%;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
 .top {
   width: 85vw;
-  margin: 10px auto;
+  margin: 10px auto 0;
   text-align: center;
 }
 
 body {
-  background-color: #272626;
   color: #d8d6d6;
+}
+
+.background-2 {
+  background-color: #272626;
+}
+
+a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #d58d71;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #8788bf;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 576px) {
+  #portfolio {
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  #portfolio img {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=base.css.map */

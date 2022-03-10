@@ -5,6 +5,29 @@
 
 body {
 
-    background-color: rgb(39, 38, 38);
+    // background-color: rgb(39, 38, 38);
     color:rgb(216, 214, 214);
 }
+
+.background-2 {
+
+    background-color: rgb(39, 38, 38);
+}
+
+a {
+
+    width: fit-content;
+    color: #d58d71;
+    text-decoration: none;
+
+
+    &:visited {
+
+        color: #8788bf;
+        text-decoration: none;
+    }
+}
+
+// media queries
+
+@import "media-queries";
