@@ -9,4 +9,95 @@
     width: 100%;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .nav-icons {
+    display: inline-block;
+    width: 50px;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    background-color: #111;
+    border-right: 2px solid #302c46;
+  }
+  .nav-icons .fa-solid {
+    margin: 5vh 0 5vh 7px;
+  }
+  .nav-icons .fa-github-square {
+    margin: 5vh 0 5vh 7px;
+  }
+  .nav-menu {
+    display: none;
+  }
+  nav {
+    width: 50px;
+  }
+  .image-content,
+  .scroll-down {
+    left: 50px;
+  }
+  #portfolio {
+    margin-left: 10vw;
+    margin-right: 0;
+  }
+  #contact {
+    margin-left: 10vw;
+  }
+  .get-in-touch {
+    margin-left: -17px;
+  }
+  form {
+    width: 84vw;
+    margin: 0 10vw 0 0;
+  }
+  .top {
+    margin: 10px 10vw 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .nav-icons {
+    display: none;
+  }
+  .nav-links {
+    display: inline-block;
+    width: 100px;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    background-color: #111;
+    border-right: 2px solid #302c46;
+  }
+  .container {
+    width: 88vw;
+    margin-left: 10vw;
+  }
+  #portfolio {
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    width: 800px;
+  }
+  .background-2 {
+    padding: 10px 0;
+  }
+  #contact {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    width: 800px;
+  }
+  .get-in-touch {
+    width: 300px;
+    text-align: left;
+  }
+  form {
+    width: 500px;
+  }
+  .top {
+    margin: 25px auto 10px;
+  }
+}
 /*# sourceMappingURL=media-queries.css.map */
