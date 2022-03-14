@@ -71,7 +71,9 @@ nav {
   width: 85vw;
 }
 
-#portfolio .project {
+#portfolio .project,
+#portfolio .project-1,
+#portfolio .project-2 {
   background-color: #272626;
   color: white;
   text-align: center;
@@ -134,9 +136,28 @@ input[type="submit"] {
   font-size: 0.8rem;
 }
 
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  outline-color: #8788bf;
+}
+
 .top {
   width: 85vw;
   margin: 10px auto 0;
+  text-align: center;
+}
+
+.about-me-container,
+.coding-container,
+.scs-container {
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   text-align: center;
 }
 
@@ -182,6 +203,7 @@ a:visited {
     z-index: 1;
     background-color: #111;
     border-right: 2px solid #302c46;
+    top: 0px;
   }
   .nav-icons .fa-solid {
     margin: 5vh 0 5vh 7px;
@@ -230,6 +252,15 @@ a:visited {
     z-index: 1;
     background-color: #111;
     border-right: 2px solid #302c46;
+    top: 0px;
+  }
+  .nav-links ul {
+    list-style: none;
+    padding-left: 10px;
+    font-size: 0.95rem;
+  }
+  .nav-links li {
+    margin: 55px 0;
   }
   .container {
     width: 88vw;
@@ -261,6 +292,42 @@ a:visited {
   }
   .top {
     margin: 25px auto 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #portfolio {
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    width: 1000px;
+  }
+  #portfolio .project-1 {
+    grid-column-end: 3;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+  }
+  #portfolio .project-2 {
+    grid-column-end: 5;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+  }
+  #portfolio .project {
+    height: 280px;
+  }
+  .background-1 .container {
+    height: 800px;
+  }
+  #contact {
+    width: 1000px;
+  }
+  .get-in-touch {
+    width: 300px;
+  }
+  form {
+    width: 700px;
   }
 }
 /*# sourceMappingURL=base.css.map */

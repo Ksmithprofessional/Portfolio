@@ -71,7 +71,9 @@ nav {
   width: 85vw;
 }
 
-#portfolio .project {
+#portfolio .project,
+#portfolio .project-1,
+#portfolio .project-2 {
   background-color: #272626;
   color: white;
   text-align: center;
@@ -132,6 +134,15 @@ input[type="submit"] {
   border-radius: 2%;
   font-weight: 700;
   font-size: 0.8rem;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  outline-color: #8788bf;
 }
 
 .top {

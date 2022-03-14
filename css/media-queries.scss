@@ -23,6 +23,7 @@
         z-index: 1;
         background-color: #111;
         border-right: 2px solid #302c46;
+        top: 0px;
 
         & .fa-solid {
 
@@ -95,6 +96,19 @@
         z-index: 1;
         background-color: #111;
         border-right: 2px solid #302c46;
+        top: 0px;
+
+      & ul {
+
+        list-style: none;
+        padding-left: 10px;
+        font-size: 0.95rem;
+      }
+
+      & li {
+
+        margin: 55px 0;
+      }
     }
 
     .container {
@@ -137,6 +151,60 @@
     .top {
 
         margin: 25px auto 10px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    #portfolio {
+
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 0 auto;
+        width: 1000px;
+
+        & .project-1 {
+
+            grid-column-end: 3;
+            grid-column-start: 1;
+
+        }
+
+        & .project-2 {
+
+
+            grid-column-end: 5;
+            grid-column-start: 3;
+        }
+
+        & .project {
+
+            height: 280px;
+        }
+    }
+
+    .background-1 {
+
+        & .container {
+
+            height: 800px;
+        }
+    }
+
+    #contact {
+
+        width: 1000px;
+    }
+
+    .get-in-touch {
+
+        width: 300px;
+    }
+
+    form {
+
+        width: 700px;
     }
 
 }

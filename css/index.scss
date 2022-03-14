@@ -84,7 +84,9 @@ nav {
 
     }
 
-    & .project {
+    & .project,
+    & .project-1,
+    & .project-2 {
 
         background-color: #272626;
         color: white;
@@ -154,6 +156,21 @@ input[type="submit"] {
     border-radius: 2%;
     font-weight: 700;
     font-size: 0.8rem;
+
+    &:hover {
+
+        cursor: pointer;
+    }
+}
+
+input[type="text"],
+textarea {
+
+    &:focus {
+
+        outline-color: #8788bf; 
+        // doesn't work
+    }
 }
 
 .top {
