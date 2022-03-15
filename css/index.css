@@ -42,12 +42,22 @@ nav {
   top: 40%;
 }
 
+.header-image .image-content h1,
+.header-image .image-content p {
+  -webkit-text-stroke: 0.1px black;
+  color: white;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
 .header-image .scroll-down {
   position: absolute;
   width: 100vw;
   margin: 0 auto;
   text-align: center;
   bottom: 20px;
+  -webkit-text-stroke: 0.1px black;
+  color: white;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .background-1 {
@@ -111,7 +121,8 @@ fieldset {
 
 #fname,
 #lname {
-  width: calc(50% - 1.993px);
+  width: calc(50% - 2.1px);
+  font-size: 90%;
 }
 
 #fname,

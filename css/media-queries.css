@@ -25,7 +25,28 @@
     margin: 5vh 0 5vh 7px;
   }
   .nav-icons .fa-github-square {
-    margin: 5vh 0 5vh 7px;
+    margin: 5vh 0 5vh 8px;
+  }
+  .nav-icons .fa-person {
+    margin-left: 12px;
+  }
+  .nav-icons .fa-copy,
+  .nav-icons .fa-comment-dots {
+    margin-left: 10px;
+  }
+  .logo {
+    font-size: 1rem;
+    text-align: center;
+    border: 5px solid #302c46;
+    background-color: #d58d71;
+  }
+  .logo p {
+    -webkit-text-stroke: 0.1px black;
+    color: white;
+    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+  .logo:hover {
+    background: radial-gradient(#d58d71, #b1745c);
   }
   .nav-menu {
     display: none;
@@ -35,7 +56,11 @@
   }
   .image-content,
   .scroll-down {
-    left: 50px;
+    width: 100%;
+  }
+  .header-container {
+    width: 95vw;
+    margin-left: 3.5vw;
   }
   #portfolio {
     margin-left: 10vw;
@@ -54,6 +79,11 @@
   .top {
     margin: 10px 10vw 0;
   }
+  .about-me-container,
+  .coding-container,
+  .scs-container {
+    margin: 50px 0 0 15vw;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -70,13 +100,21 @@
     border-right: 2px solid #302c46;
     top: 0px;
   }
+  .nav-links .logo {
+    font-size: 2rem;
+  }
   .nav-links ul {
     list-style: none;
-    padding-left: 10px;
-    font-size: 0.95rem;
+    padding-left: 0px;
+    font-size: 0.8rem;
+    text-align: center;
   }
   .nav-links li {
     margin: 55px 0;
+  }
+  .header-container {
+    width: 95vw;
+    margin-left: 4vw;
   }
   .container {
     width: 88vw;
@@ -100,8 +138,9 @@
     width: 800px;
   }
   .get-in-touch {
-    width: 300px;
+    width: 290px;
     text-align: left;
+    padding-right: 15px;
   }
   form {
     width: 500px;
@@ -109,9 +148,27 @@
   .top {
     margin: 25px auto 10px;
   }
+  .about-me-container,
+  .coding-container,
+  .scs-container {
+    margin: 50px 0 0 12vw;
+    width: 84vw;
+  }
+  .about-me,
+  .coding,
+  .scs {
+    width: 800px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 1200px) {
+  .image-content h1 {
+    font-size: 3rem;
+  }
+  .image-content p {
+    font-size: 1.5rem;
+  }
   #portfolio {
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -139,11 +196,13 @@
   #contact {
     width: 1000px;
   }
-  .get-in-touch {
-    width: 300px;
-  }
   form {
     width: 700px;
+  }
+  .about-me,
+  .coding,
+  .scs {
+    width: 1000px;
   }
 }
 /*# sourceMappingURL=media-queries.css.map */

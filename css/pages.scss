@@ -2,9 +2,16 @@
 .coding-container,
 .scs-container {
 
-    margin: 0 auto;
-    width: fit-content;
+    margin: 50px auto 0;
+    width: 75vw;
+}
+
+.about-me,
+.coding,
+.scs {
+
     text-align: center;
+    color: black;
 }
 
 // change this, needs to have a margin container like the index, scs scheme

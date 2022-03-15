@@ -32,8 +32,46 @@
 
         & .fa-github-square {
 
-            margin: 5vh 0 5vh 7px;
+            margin: 5vh 0 5vh 8px;
         }
+
+        & .fa-person {
+
+            margin-left: 12px;
+        }
+
+        & .fa-copy,
+        & .fa-comment-dots {
+
+            margin-left: 10px;
+        }
+    }
+
+    .logo {
+        
+        font-size: 1rem;
+        text-align: center;
+        border: 5px solid #302c46;
+        background-color: #d58d71;
+
+        & p {
+
+            -webkit-text-stroke: 0.1px black;
+                color: white;
+                text-shadow:
+                    3px 3px 0 #000,
+                  -1px -1px 0 #000,  
+                   1px -1px 0 #000,
+                   -1px 1px 0 #000,
+                    1px 1px 0 #000;
+
+        }
+
+        &:hover {
+
+            background: radial-gradient(#d58d71, #b1745c);
+        }
+
     }
 
     .nav-menu {
@@ -49,7 +87,15 @@
     .image-content,
     .scroll-down {
 
-        left: 50px;
+        // left: 50px;
+        width: 100%;
+
+    }
+
+    .header-container {
+
+        width: 95vw;
+        margin-left: 3.5vw;
     }
 
     #portfolio {
@@ -78,6 +124,13 @@
 
         margin: 10px 10vw 0;
     }
+
+    .about-me-container,
+    .coding-container,
+    .scs-container {
+
+        margin: 50px 0 0 15vw;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -98,17 +151,34 @@
         border-right: 2px solid #302c46;
         top: 0px;
 
+        & .logo {
+
+            font-size: 2rem;
+        }
+
       & ul {
 
         list-style: none;
-        padding-left: 10px;
-        font-size: 0.95rem;
-      }
+        padding-left: 0px;
+        font-size: 0.8rem;
+        text-align: center;
+        }
 
       & li {
 
         margin: 55px 0;
-      }
+        }
+
+    //   & .fa-github-square {
+
+    //     margin-left: 20px;
+    //     }
+    }
+
+    .header-container {
+
+        width: 95vw;
+        margin-left: 4vw;
     }
 
     .container {
@@ -139,8 +209,9 @@
 
     .get-in-touch {
 
-        width: 300px;
+        width: 290px;
         text-align: left;
+        padding-right: 15px;
     }
 
     form {
@@ -153,9 +224,39 @@
         margin: 25px auto 10px;
     }
 
+    .about-me-container,
+    .coding-container,
+    .scs-container {
+
+        margin: 50px 0 0 12vw;
+        width: 84vw;
+    }
+
+    .about-me,
+    .coding,
+    .scs {
+
+        width: 800px;
+        margin: 0 auto;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
+
+
+    .image-content {
+
+        & h1 {
+
+            font-size: 3rem;
+        }
+
+        & p {
+
+            font-size: 1.5rem;
+        }
+    }
 
     #portfolio {
 
@@ -197,14 +298,21 @@
         width: 1000px;
     }
 
-    .get-in-touch {
+    // .get-in-touch {
 
-        width: 300px;
-    }
+    //     width: 300px;
+    // }
 
     form {
 
         width: 700px;
+    }
+
+    .about-me,
+    .coding,
+    .scs {
+
+        width: 1000px;
     }
 
 }
