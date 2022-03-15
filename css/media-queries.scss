@@ -129,8 +129,17 @@
     .coding-container,
     .scs-container {
 
-        margin: 50px 0 0 15vw;
+        margin: 0 0 0 15vw;
     }
+
+    // .top-image {
+
+    //     & .text-container {
+
+    //         width: 600px;
+    //         margin-left: 15vw;
+    //     }
+    // }
 }
 
 @media screen and (min-width: 992px) {
@@ -228,7 +237,7 @@
     .coding-container,
     .scs-container {
 
-        margin: 50px 0 0 12vw;
+        margin: 0 0 0 12vw;
         width: 84vw;
     }
 
@@ -238,6 +247,17 @@
 
         width: 800px;
         margin: 0 auto;
+    }
+
+    .top-image {
+
+        & .text-container {
+
+            & h1 {
+
+                left: 120px;
+            }
+        }
     }
 
 }
