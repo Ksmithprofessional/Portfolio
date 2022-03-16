@@ -9,8 +9,9 @@
 .about-me-background,
 .coding-background,
 .scs-background {
-  background-color: #ececec;
-  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ececec), to(white));
+  background: linear-gradient(#ececec, white);
+  height: 90vh;
 }
 
 .about-me,
@@ -45,5 +46,39 @@
   position: absolute;
   left: 70px;
   top: -20px;
+}
+
+.about-me h1,
+.coding h1,
+.intro-scs h1 {
+  font-size: 2.6rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 40px;
+}
+
+.scs h2 {
+  font-size: 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 30px auto 30px;
+}
+
+.treehouse {
+  font-size: 1.5rem;
+}
+
+.netmatters-content {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.netmatters-content img {
+  width: 40px;
+  padding-top: 27px;
+  padding-right: 10px;
 }
 /*# sourceMappingURL=pages.css.map */
