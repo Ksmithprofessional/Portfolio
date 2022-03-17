@@ -28,11 +28,21 @@
         & .fa-solid {
 
             margin: 5vh 0 5vh 7px;
+
+            &:hover {
+
+                color: white;
+            }
         }
 
         & .fa-github-square {
 
             margin: 5vh 0 5vh 8px;
+
+            &:hover {
+
+                color: white;
+            }
         }
 
         & .fa-person {
@@ -45,6 +55,8 @@
 
             margin-left: 10px;
         }
+
+
     }
 
     .logo {
@@ -140,6 +152,13 @@
     //         margin-left: 15vw;
     //     }
     // }
+
+    .about-me {
+
+        width: 600px;
+        text-align: left;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -176,6 +195,15 @@
       & li {
 
         margin: 55px 0;
+
+        & a {
+
+            &:hover {
+
+                color: white;
+            }
+        }
+
         }
 
     //   & .fa-github-square {
