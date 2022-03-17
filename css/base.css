@@ -222,6 +222,12 @@ textarea:focus {
   margin: 0 auto 40px;
 }
 
+.about-me,
+.coding,
+.scs {
+  padding-bottom: 20px;
+}
+
 .scs h2 {
   font-size: 2rem;
   width: -webkit-fit-content;
