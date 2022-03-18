@@ -14,7 +14,10 @@
   height: 90vh;
 }
 
-.about-me,
+.about-me {
+  color: black;
+}
+
 .coding,
 .scs {
   text-align: center;
@@ -86,5 +89,13 @@
   width: 40px;
   padding-top: 27px;
   padding-right: 10px;
+}
+
+.about-me img {
+  width: 150px;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  display: block;
 }
 /*# sourceMappingURL=pages.css.map */

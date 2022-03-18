@@ -56,8 +56,17 @@ nav {
   text-align: center;
   bottom: 20px;
   -webkit-text-stroke: 0.1px black;
-  color: white;
   text-shadow: 3px 3px 0 #000, -1px -1px 0 #000,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.scroll-down a,
+.top a {
+  color: white;
+}
+
+.scroll-down a:hover,
+.top a:hover {
+  color: inherit;
 }
 
 .background-1 {
