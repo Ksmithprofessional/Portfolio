@@ -52,7 +52,6 @@ nav {
 .header-image .scroll-down {
   position: absolute;
   width: 100vw;
-  margin: 0 auto;
   text-align: center;
   bottom: 20px;
   -webkit-text-stroke: 0.1px black;
@@ -67,6 +66,12 @@ nav {
 .scroll-down a:hover,
 .top a:hover {
   color: inherit;
+}
+
+.scroll-down a {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
 }
 
 .background-1 {
@@ -96,6 +101,14 @@ nav {
   background-color: #272626;
   color: white;
   text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#portfolio .project img:hover,
+#portfolio .project-1 img:hover,
+#portfolio .project-2 img:hover {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 #contact {
