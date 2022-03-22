@@ -105,12 +105,6 @@ nav {
   border-radius: 5px;
 }
 
-#portfolio .project img:hover,
-#portfolio .project-1 img:hover,
-#portfolio .project-2 img:hover {
-  color: rgba(255, 255, 255, 0.5);
-}
-
 #contact {
   display: -ms-grid;
   display: grid;
