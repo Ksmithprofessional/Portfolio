@@ -301,6 +301,77 @@ a:visited {
   text-decoration: none;
 }
 
+.nav-icons {
+  display: none;
+  width: 50px;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  background-color: #111;
+  border-right: 2px solid #302c46;
+  top: 0px;
+}
+
+.nav-icons .fa-solid {
+  margin: 5vh 0 5vh 7px;
+}
+
+.nav-icons .fa-solid:hover {
+  color: white;
+}
+
+.nav-icons .fa-github-square {
+  margin: 5vh 0 5vh 8px;
+}
+
+.nav-icons .fa-github-square:hover {
+  color: white;
+}
+
+.nav-icons .fa-person {
+  margin-left: 12px;
+}
+
+.nav-icons .fa-copy,
+.nav-icons .fa-comment-dots {
+  margin-left: 10px;
+}
+
+.nav-icons .fa-times-circle {
+  font-size: 1.4rem;
+  position: absolute;
+  top: 10px;
+  left: 59px;
+  color: #c93131;
+}
+
+.logo {
+  font-size: 1rem;
+  text-align: center;
+  border: 5px solid #302c46;
+  background-color: #d58d71;
+}
+
+.logo p {
+  -webkit-text-stroke: 0.1px black;
+  color: white;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.logo:hover {
+  background: radial-gradient(#d58d71, #b1745c);
+}
+
+.error {
+  display: inline-block;
+  color: #c93131;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 10px;
+  font-size: 1.1rem;
+}
+
 @media screen and (min-width: 576px) {
   #portfolio {
     -ms-grid-rows: 1fr 1fr 1fr;
@@ -316,46 +387,9 @@ a:visited {
 @media screen and (min-width: 768px) {
   .nav-icons {
     display: inline-block;
-    width: 50px;
-    height: 100vh;
-    position: fixed;
-    z-index: 1;
-    background-color: #111;
-    border-right: 2px solid #302c46;
-    top: 0px;
   }
-  .nav-icons .fa-solid {
-    margin: 5vh 0 5vh 7px;
-  }
-  .nav-icons .fa-solid:hover {
-    color: white;
-  }
-  .nav-icons .fa-github-square {
-    margin: 5vh 0 5vh 8px;
-  }
-  .nav-icons .fa-github-square:hover {
-    color: white;
-  }
-  .nav-icons .fa-person {
-    margin-left: 12px;
-  }
-  .nav-icons .fa-copy,
-  .nav-icons .fa-comment-dots {
-    margin-left: 10px;
-  }
-  .logo {
-    font-size: 1rem;
-    text-align: center;
-    border: 5px solid #302c46;
-    background-color: #d58d71;
-  }
-  .logo p {
-    -webkit-text-stroke: 0.1px black;
-    color: white;
-    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  }
-  .logo:hover {
-    background: radial-gradient(#d58d71, #b1745c);
+  .nav-icons .fa-times-circle {
+    display: none;
   }
   .nav-menu {
     display: none;
