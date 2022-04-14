@@ -372,6 +372,10 @@ a:visited {
   font-size: 1.1rem;
 }
 
+.image-content .header-name {
+  opacity: 0;
+}
+
 @media screen and (min-width: 576px) {
   #portfolio {
     -ms-grid-rows: 1fr 1fr 1fr;

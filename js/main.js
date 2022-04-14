@@ -26,7 +26,24 @@ close.addEventListener('click', () => {
 // i think i would need to wrap every letter in a span or div
 // then add translate/scale css to each one on page load and loop through till each appear?
 // so a for loop with each letter as a .letter class and then .letter.length?
-let header = document.querySelector('.image-content h1')
+let header = document.querySelectorAll('.header-name')
+let border = document.querySelector('.header-border')
+
+for (let i = 0; i < header.length; i++) {
+
+    // setTimeout( () => { header[i].style.display = 'inline'}, 100 * i);
+    setTimeout( () => { header[i].style.opacity = '1'}, 100 * i);
+    setTimeout( () => { header[i].style.transition = 'all 1s ease-out'}, 100 * i);
+    
+    
+};
+
+// for (let i = 0; i < border.length; i++) {
+
+//     setTimeout( () => { border[i].style.borderTop = '2px solid white'}, 100 * i);
+//     setTimeout( () => { border[i].style.borderBottom = '2px solid white'}, 100 * i);
+    
+// };
 
 
 // form validation
