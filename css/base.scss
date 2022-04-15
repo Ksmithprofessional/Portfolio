@@ -122,12 +122,19 @@ a {
 
 .image-content {
 
+    font-family: 'Permanent Marker', 'Nunito', sans-serif;
+
+    & .header-border {
+
+        max-width: 70vw;
+        margin: 0 auto;
+    }
 
     & .header-name {
 
         // display: none;
         // position: relative;
-        // // font-size: 0.1rem;
+        // font-size: 1.5rem;
         opacity: 0;
     }
 }

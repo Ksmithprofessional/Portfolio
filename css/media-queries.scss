@@ -1,5 +1,10 @@
 @media screen and (min-width: 576px) {
 
+    .inline-name {
+
+        display: inline-block;
+    }
+
     #portfolio {
 
         grid-template-rows: 1fr 1fr 1fr;

@@ -1,4 +1,7 @@
 @media screen and (min-width: 576px) {
+  .inline-name {
+    display: inline-block;
+  }
   #portfolio {
     -ms-grid-rows: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;

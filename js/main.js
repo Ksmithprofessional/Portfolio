@@ -29,14 +29,23 @@ close.addEventListener('click', () => {
 let header = document.querySelectorAll('.header-name')
 let border = document.querySelector('.header-border')
 
-for (let i = 0; i < header.length; i++) {
 
-    // setTimeout( () => { header[i].style.display = 'inline'}, 100 * i);
-    setTimeout( () => { header[i].style.opacity = '1'}, 100 * i);
-    setTimeout( () => { header[i].style.transition = 'all 1s ease-out'}, 100 * i);
-    
-    
-};
+window.addEventListener('load', () => {
+    for (let i = 0; i < header.length; i++) {
+
+        setTimeout( () => { header[i].style.opacity = '1'}, 100 * i);
+        setTimeout( () => { header[i].style.transition = 'all 1s ease-out'}, 100 * i);
+        
+            // if (i === header.length - 1) {
+
+            //     //works because it's less than header.length
+            //     header[0].style.removeProperty('transition');
+            //     console.log('working');
+            // };
+        
+    };
+});
+
 
 // for (let i = 0; i < border.length; i++) {
 
