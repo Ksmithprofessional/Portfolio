@@ -372,6 +372,10 @@ a:visited {
   font-size: 1.1rem;
 }
 
+.portfolio-title {
+  font-family: 'Permanent Marker', 'Nunito', sans-serif;
+}
+
 .image-content {
   font-family: 'Permanent Marker', 'Nunito', sans-serif;
 }
