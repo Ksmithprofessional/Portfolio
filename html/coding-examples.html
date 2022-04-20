@@ -7,6 +7,7 @@
     <title>Karl Smith's portfolio | Coding Examples</title>
     <link rel="stylesheet" href="../css/Normalise.css">
     <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/prism.css">
     <script src="https://kit.fontawesome.com/cc1e8c8726.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -73,7 +74,30 @@
         <div class="coding-container">
             <div class="coding">
             <h1>Coding Examples</h1>
-            <p>Coming soon!</p>
+                <div class="code-1">
+                    <h3>Text animation</h3>
+                    <pre><code class="language-js">
+    let header = document.querySelectorAll('.header-name')
+
+    window.addEventListener('load', () => {
+        for (let i = 0; i < header.length; i++) {
+
+            setTimeout( () => { header[i].style.opacity = '1'}, 100 * i);
+            setTimeout( () => { header[i].style.transition = 'all 1s ease-out'}, 100 * i);
+            
+                if (i === header.length - 1) {
+
+                    for (let i = 0; i < header.length; i++) {
+                        
+                        //removes the transition property after it's finished
+                        setTimeout( () => { header[i].style.transition = ''}, 100 * i); 
+                    };
+                };
+        };
+    });
+                    </code></pre>
+                    <p>The javascript code for the fade in animation on the text on the index page.</p>
+                </div>
             </div>
 
         </div>
@@ -81,5 +105,6 @@
     </div>
 
     <script src="../js/main.js"></script>
+    <script src="../js/prism.js"></script>
 </body>
 </html>

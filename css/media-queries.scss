@@ -14,6 +14,16 @@
 
             width: 100%;
         }
+
+        & .project,
+        & .project-1,
+        & .project-2 {
+
+            & .hover-text {
+
+                top: 53px;
+            }
+        }
     }
 }
 
@@ -58,6 +68,16 @@
 
         margin-left: 10vw;
         margin-right: 0;
+
+        & .project,
+        & .project-1,
+        & .project-2 {
+
+            & .hover-text {
+
+                top: 90px;
+            }
+        }
     }
 
     #contact {
@@ -174,6 +194,16 @@
         grid-template-columns: 1fr 1fr 1fr;
         margin: 0 auto;
         width: 800px;
+
+        & .project,
+        & .project-1,
+        & .project-2 {
+
+            & .hover-text {
+
+                top: 50px;
+            }
+        }
     }
 
     .background-2 {
@@ -275,6 +305,16 @@
 
             height: 280px;
         }
+
+        & .project,
+        & .project-1,
+        & .project-2 {
+
+            & .hover-text {
+
+                top: 163px;
+            }
+        }
     }
 
     .background-1 {
@@ -306,5 +346,4 @@
 
         width: 1000px;
     }
-
 }

@@ -135,3 +135,14 @@
         display: block;
     }
 }
+
+pre {
+
+    border: 2px solid black;
+    height: 40vh;
+
+    & code[class*="language-"] {
+
+        font-size: 0.8rem;
+    }
+}

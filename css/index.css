@@ -103,6 +103,30 @@ nav {
   text-align: center;
   border: 1px solid black;
   border-radius: 5px;
+  position: relative;
+}
+
+#portfolio .project .hover-text,
+#portfolio .project-1 .hover-text,
+#portfolio .project-2 .hover-text {
+  opacity: 0;
+  position: absolute;
+  top: 125px;
+  padding: 10px;
+  -webkit-text-stroke: 0.1px black;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#portfolio .project:hover .hover-text,
+#portfolio .project-1:hover .hover-text,
+#portfolio .project-2:hover .hover-text {
+  opacity: 1;
+}
+
+#portfolio .project:hover img,
+#portfolio .project-1:hover img,
+#portfolio .project-2:hover img {
+  opacity: 0.3;
 }
 
 #contact {

@@ -11,6 +11,11 @@
   #portfolio img {
     width: 100%;
   }
+  #portfolio .project .hover-text,
+  #portfolio .project-1 .hover-text,
+  #portfolio .project-2 .hover-text {
+    top: 53px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -37,6 +42,11 @@
   #portfolio {
     margin-left: 10vw;
     margin-right: 0;
+  }
+  #portfolio .project .hover-text,
+  #portfolio .project-1 .hover-text,
+  #portfolio .project-2 .hover-text {
+    top: 90px;
   }
   #contact {
     margin-left: 10vw;
@@ -108,6 +118,11 @@
     margin: 0 auto;
     width: 800px;
   }
+  #portfolio .project .hover-text,
+  #portfolio .project-1 .hover-text,
+  #portfolio .project-2 .hover-text {
+    top: 50px;
+  }
   .background-2 {
     padding: 10px 0;
   }
@@ -172,6 +187,11 @@
   }
   #portfolio .project {
     height: 280px;
+  }
+  #portfolio .project .hover-text,
+  #portfolio .project-1 .hover-text,
+  #portfolio .project-2 .hover-text {
+    top: 163px;
   }
   .background-1 .container {
     height: 800px;
