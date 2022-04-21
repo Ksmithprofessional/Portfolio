@@ -196,6 +196,36 @@ textarea:focus {
   outline-color: #8788bf;
 }
 
+.name-star,
+.e-star {
+  position: relative;
+  color: #3d3d3d;
+}
+
+.name-star::after,
+.e-star::after {
+  content: '*';
+  position: absolute;
+  right: 12px;
+  z-index: 1;
+  top: 3px;
+  font-size: 1.5rem;
+}
+
+.mess-star {
+  position: relative;
+  color: #3d3d3d;
+}
+
+.mess-star::after {
+  content: '*';
+  position: absolute;
+  right: 12px;
+  z-index: 1;
+  bottom: 37px;
+  font-size: 1.5rem;
+}
+
 .top {
   width: 85vw;
   margin: 10px auto 0;

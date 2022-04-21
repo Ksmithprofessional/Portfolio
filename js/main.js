@@ -68,14 +68,30 @@ const form = document.querySelector('form');
 form.addEventListener('submit', (e) => {
 
     let email = document.querySelector('.email input').value;
+    let emailStar = document.querySelector('.e-star')
     const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
     if(!email.match(regex)) {
 
         e.preventDefault();
-        document.querySelector('.error').innerHTML = `<i class="far fa-times-circle"></i> Invalid email address`
+        document.querySelector('.error').innerHTML = `<i class="far fa-times-circle"></i> Invalid email address`;
+        emailStar.style.color = 'red';
         // console.log(email);
         // test to see whether the email address actually shows up on failure
+
+    }
+});
+
+form.addEventListener('submit', (e) => {
+
+    let name = document.querySelector('.fname input').value;
+    let Star = document.querySelector('.name-star')
+
+    if(name.match("")) {
+
+        e.preventDefault();
+        document.querySelector('.error').innerHTML = `<i class="far fa-times-circle"></i> Please fill in required fields`;
+        Star.style.color = 'red';
 
     }
 });
