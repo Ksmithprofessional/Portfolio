@@ -312,6 +312,20 @@ pre code[class*="language-"] {
   font-size: 0.8rem;
 }
 
+.code-1,
+.code-2 {
+  margin: 25px 0;
+}
+
+.code-1 h3,
+.code-2 h3 {
+  border-bottom: 1px solid black;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 30px auto 15px;
+}
+
 body {
   color: #d8d6d6;
   font-family: 'Nunito', sans-serif;

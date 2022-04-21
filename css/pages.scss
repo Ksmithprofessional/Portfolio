@@ -146,3 +146,16 @@ pre {
         font-size: 0.8rem;
     }
 }
+
+.code-1,
+.code-2 {
+
+    margin: 25px 0;
+
+    & h3 {
+
+        border-bottom: 1px solid black;
+        width: fit-content;
+        margin: 30px auto 15px;
+    }
+}

@@ -98,6 +98,37 @@
                     </code></pre>
                     <p>The javascript code for the fade in animation on the text on the index page.</p>
                 </div>
+
+                <div class="code-2">
+
+                    <h3>A soundboard</h3>
+                
+                    <pre><code class="language-js">
+    const sound1 = document.querySelector('.sound-1')
+    const sound2 = document.querySelector('.sound-2')
+
+
+    document.addEventListener('keydown', logKey);
+
+    function logKey(e) {
+
+        if (e.keyCode === 49) {
+
+            //digit 1
+
+            sound1.play();
+
+        } if (e.keyCode === 50) {
+
+            //digit 2
+
+            sound2.play();
+
+        }
+    };
+                    </code></pre>
+                    <p>A snippet of code from a soundboard I made for myself. Press the right key, and a sound effect that's linked to it will play.</p>
+                </div>
             </div>
 
         </div>
