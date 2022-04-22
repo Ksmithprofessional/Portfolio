@@ -79,15 +79,52 @@ form.addEventListener('submit', (e) => {
         // console.log(email);
         // test to see whether the email address actually shows up on failure
 
+    } else {
+
+        emailStar.style.color = 'black';
     }
 });
 
 form.addEventListener('submit', (e) => {
 
     let name = document.querySelector('.fname input').value;
-    let Star = document.querySelector('.name-star')
+    let Star = document.querySelector('.name-star');
 
-    if(name.match("")) {
+    if(name === '') {
+
+        e.preventDefault();
+        document.querySelector('.error').innerHTML = `<i class="far fa-times-circle"></i> Please fill in required fields`;
+        Star.style.color = 'red';
+
+    } else {
+
+        Star.style.color = 'black';
+    }
+});
+
+form.addEventListener('submit', (e) => {
+
+    let message = document.querySelector('.message textarea').value;
+    let Star = document.querySelector('.mess-star');
+
+    if(message === '') {
+
+        e.preventDefault();
+        document.querySelector('.error').innerHTML = `<i class="far fa-times-circle"></i> Please fill in required fields`;
+        Star.style.color = 'red';
+
+    } else {
+
+        Star.style.color = 'black';
+    }
+});
+
+form.addEventListener('submit', (e) => {
+
+    let email = document.querySelector('.email input').value;
+    let Star = document.querySelector('.e-star');
+
+    if(email === '') {
 
         e.preventDefault();
         document.querySelector('.error').innerHTML = `<i class="far fa-times-circle"></i> Please fill in required fields`;
