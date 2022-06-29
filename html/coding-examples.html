@@ -73,28 +73,28 @@
     <div class="coding-background">
         <div class="coding-container">
             <div class="coding">
-            <h1>Coding Examples</h1>
+                <h1>Coding Examples</h1>
                 <div class="code-1">
                     <h3>Text animation</h3>
                     <pre><code class="language-js">
-    let header = document.querySelectorAll('.header-name')
+        let header = document.querySelectorAll('.header-name')
 
-    window.addEventListener('load', () => {
-        for (let i = 0; i < header.length; i++) {
+        window.addEventListener('load', () => {
+            for (let i = 0; i < header.length; i++) {
 
-            setTimeout( () => { header[i].style.opacity = '1'}, 100 * i);
-            setTimeout( () => { header[i].style.transition = 'all 1s ease-out'}, 100 * i);
-            
-                if (i === header.length - 1) {
+                setTimeout( () => { header[i].style.opacity = '1'}, 100 * i);
+                setTimeout( () => { header[i].style.transition = 'all 1s ease-out'}, 100 * i);
+                
+                    if (i === header.length - 1) {
 
-                    for (let i = 0; i < header.length; i++) {
-                        
-                        //removes the transition property after it's finished
-                        setTimeout( () => { header[i].style.transition = ''}, 100 * i); 
+                        for (let i = 0; i < header.length; i++) {
+                            
+                            //removes the transition property after it's finished
+                            setTimeout( () => { header[i].style.transition = ''}, 100 * i); 
+                        };
                     };
-                };
-        };
-    });
+            };
+        });
                     </code></pre>
                     <p>The javascript code for the fade in animation on the text on the index page.</p>
                 </div>
@@ -104,32 +104,66 @@
                     <h3>A soundboard</h3>
                 
                     <pre><code class="language-js">
-    const sound1 = document.querySelector('.sound-1')
-    const sound2 = document.querySelector('.sound-2')
+        const sound1 = document.querySelector('.sound-1')
+        const sound2 = document.querySelector('.sound-2')
 
 
-    document.addEventListener('keydown', logKey);
+        document.addEventListener('keydown', logKey);
 
-    function logKey(e) {
+        function logKey(e) {
 
-        if (e.keyCode === 49) {
+            if (e.keyCode === 49) {
 
-            //digit 1
+                //digit 1
 
-            sound1.play();
+                sound1.play();
 
-        } if (e.keyCode === 50) {
+            } if (e.keyCode === 50) {
 
-            //digit 2
+                //digit 2
 
-            sound2.play();
+                sound2.play();
 
-        }
-    };
+            }
+        };
                     </code></pre>
                     <p>A snippet of code from a soundboard I made for myself. Press the right key, and a sound effect that's linked to it will play.</p>
                 </div>
-            </div>
+
+                <div class="code-3">
+
+                    <h3>SQL challenge</h3>
+
+                    <img class ="database" src="../images/soccer-database.png" alt="Football database used in the SQL challenge">
+                
+                    <pre><code class="language-sql">
+        
+        SELECT 
+            DISTINCT player_name AS "Player Name", 
+            posi_to_play AS "Position", 
+            jersey_no AS "Shirt Number", 
+            player_id
+        FROM player_mast
+        WHERE player_id IN (
+            SELECT player_id 
+        FROM player_booked
+            WHERE sent_off = 'Y'
+        )
+        ORDER BY player_id ASC
+        ;
+
+                    </code></pre>
+                    <p>
+                        We were tasked with creating a query that included a sub query with a formatted output from a selection of databases.
+                        I chose to try and find who got sent off during the Euro 2016 football tournament.
+                        Included are the table structure, and my SQL query.
+                    </p>
+                    <p>
+                        Also, the outcome of the query:
+                    </p>
+                    <img src="../images/sendings-off.png" alt="Players who got sent off">
+                </div>
+             </div>
 
         </div>
 

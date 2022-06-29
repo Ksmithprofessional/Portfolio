@@ -148,7 +148,8 @@ pre {
 }
 
 .code-1,
-.code-2 {
+.code-2,
+.code-3 {
 
     margin: 25px 0;
 
@@ -157,5 +158,18 @@ pre {
         border-bottom: 1px solid black;
         width: fit-content;
         margin: 30px auto 15px;
+    }
+}
+
+.code-3 {
+
+    & .database {
+
+        width: 100%;
+    }
+
+    & img {
+
+        max-width: 75vw;
     }
 }
