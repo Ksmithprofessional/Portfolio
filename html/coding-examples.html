@@ -159,6 +159,13 @@
                         Included are the table structure, and my SQL query.
                     </p>
                     <p>
+                        We used PostgreSQL for the challenge, and so i basically selected the distinct player
+                        names (since i only wanted to find out if they got sent off at any point, not using distinct would tell me if they got sent off more than once),
+                        and some other information i thought was important from the player_mast table. 
+                        The subquery then checks the player_booked table, and returns all the player id's of the players who got sent off,
+                        and then the where condition matches the player id's returned, with player id's in the player_mast table to give me the information on everyone who got sent off.
+                    </p>
+                    <p>
                         Also, the outcome of the query:
                     </p>
                     <img src="../images/sendings-off.png" alt="Players who got sent off">
