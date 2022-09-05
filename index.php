@@ -16,6 +16,11 @@
 
 <body>
 
+    <?php
+    error_reporting(E_ALL);
+    ini_set("display_errors", 1);
+    ?>
+
     <!-- side nav bar -->
     <nav>
 
@@ -116,16 +121,21 @@
                             I was tasked with recreating the netmatters homepage from scratch, as closely as i could.
                             Here is my attempt.
                         </p>
-                        </div>
+                    </div>
                     <h3>Recreating the Netmatters homepage</h3>
                     <a href="http://netmatters.karl-smith.netmatters-scs.co.uk/"><p>View Project <i class="fas fa-arrow-right"></i></p></a>
                 </div>
 
                 <div class="project-2">
 
-                    <a href="#"><img src="images/radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.jpg" alt="Project two"></a>
-                    <h3>Project Two</h3>
-                    <a href="#"><p>View Project <i class="fas fa-arrow-right"></i></p></a>
+                    <a href="https://ksmithprofessional.github.io/Array-reflection/"><img src="images/array-reflection.png" alt="My array reflection webpage"></a>
+                    <div class="hover-text">
+                        <p>
+                            I was tasked with creating a small website that would pull a random image and link it to a user inputted email address.
+                        </p>
+                    </div>
+                    <h3>Array reflection</h3>
+                    <a href="https://ksmithprofessional.github.io/Array-reflection/"><p>View Project <i class="fas fa-arrow-right"></i></p></a>
                 </div>
 
                 <div class="project">
@@ -162,6 +172,10 @@
 
 
     <!-- contact form -->
+    <?php 
+        include 'php/insert.php'; 
+        var_dump('hello'); 
+    ?>
 
     <div class="background-2">
         <div class="container">
@@ -175,7 +189,7 @@
 
                 </div>
 
-                <form>
+                <form action="index.php" method="post">
 
                     <fieldset>
 
