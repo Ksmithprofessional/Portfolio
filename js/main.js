@@ -10,14 +10,14 @@ const close = document.querySelector('.fa-times-circle')
 
 menu.addEventListener('click', () => {
 
-    document.querySelector('.nav-icons').style.display ='inline-block';
+    document.querySelector('.nav-icons').style.left ='0px';
     menu.style.display = 'none';
 
 });
 
 close.addEventListener('click', () => {
 
-    document.querySelector('.nav-icons').style.display ='none';
+    document.querySelector('.nav-icons').style.left ='-100px';
     menu.style.display = 'block';
 
 });

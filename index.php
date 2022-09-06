@@ -28,7 +28,7 @@
             <i class="fa-solid fa-bars fa-2xl"></i></a>
         </div>
 
-        <div class="nav-icons">
+        <div class="nav-icons" style="left: -100px;">
 
             <!-- logo -->
             <a href="#"><div class="logo">
@@ -174,7 +174,6 @@
     <!-- contact form -->
     <?php 
         include 'php/insert.php'; 
-        var_dump('hello'); 
     ?>
 
     <div class="background-2">
@@ -189,7 +188,7 @@
 
                 </div>
 
-                <form action="index.php" method="post">
+                <form action="#" method="post">
 
                     <fieldset>
 
@@ -210,11 +209,11 @@
                         </span>
 
                         <span class="message mess-star">
-                            <textarea id="message" placeholder="Message"></textarea>
+                            <textarea id="message" name="message" placeholder="Message"></textarea>
                         </span>
 
-                        <input type="submit" value="Submit" id="submit">
-                        <p class="error"></p>
+                        <input type="submit" value="Submit" name="submit" id="submit">
+                        <p class="error"><?php echo $error; ?></p>
 
                     </fieldset>
                 </form>

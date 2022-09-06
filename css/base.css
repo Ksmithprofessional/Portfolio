@@ -2,8 +2,7 @@ nav {
   position: relative;
 }
 
-.nav-links,
-.nav-icons {
+.nav-links {
   display: none;
 }
 
@@ -389,7 +388,6 @@ a:visited {
 }
 
 .nav-icons {
-  display: none;
   width: 50px;
   height: 100vh;
   position: fixed;
@@ -397,6 +395,8 @@ a:visited {
   background-color: #111;
   border-right: 2px solid #302c46;
   top: 0px;
+  -webkit-transition: left 0.5s ease;
+  transition: left 0.5s ease;
 }
 
 .nav-icons .fa-solid {

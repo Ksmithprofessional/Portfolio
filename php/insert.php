@@ -2,6 +2,8 @@
 
 include 'db-connection.php';
 
+$error = '';
+
 if(isset($_POST['submit'])) {
 
 
@@ -22,8 +24,10 @@ if(isset($_POST['submit'])) {
         $results-> bindparam(4, $subject, PDO::PARAM_STR);
         $results-> bindparam(5, $message, PDO::PARAM_STR);
         $results->execute();
+        $error = 'Thank you for your message!'; 
 
     } catch (Exception $e) {
-        throw $e;
+
+        $error = 'Error submitting message';
     }
 }
