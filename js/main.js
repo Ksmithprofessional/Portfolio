@@ -22,6 +22,11 @@ close.addEventListener('click', () => {
 
 });
 
+if(window.innerWidth > 767) {
+
+    document.querySelector('.nav-icons').style.left ='0px';
+}
+
 // text animation on the header text
 // i think i would need to wrap every letter in a span or div
 // then add translate/scale css to each one on page load and loop through till each appear?
