@@ -10,4 +10,11 @@ try {
 }
 
 // cpanel connection
-// $pdo = new PDO("mysql:host=localhost;dbname=karlsmit_news;","karlsmit_karlsmith","&B2bek(l4sP)");
+
+// try {
+
+//     $pdo = new PDO("mysql:host=localhost;dbname=karlsmit_portfolio;","karlsmit_karlsmith","&B2bek(l4sP)");
+// } catch (Exception $e) {
+
+//     echo 'Error: ' . $e->getMessage();
+// }

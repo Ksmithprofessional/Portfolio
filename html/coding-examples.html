@@ -77,26 +77,31 @@
                 <div class="code-1">
                     <h3>Text animation</h3>
                     <pre><code class="language-js">
-        let header = document.querySelectorAll('.header-name')
-
-        window.addEventListener('load', () => {
-            for (let i = 0; i < header.length; i++) {
-
-                setTimeout( () => { header[i].style.opacity = '1'}, 100 * i);
-                setTimeout( () => { header[i].style.transition = 'all 1s ease-out'}, 100 * i);
-                
-                    if (i === header.length - 1) {
-
-                        for (let i = 0; i < header.length; i++) {
-                            
-                            //removes the transition property after it's finished
-                            setTimeout( () => { header[i].style.transition = ''}, 100 * i); 
+                        const typewriter1 = ['M', 'y', ' ', 'n', 'a', 'm', 'e', ' ', 'i', 's', ' ', 'K', 'a', 'r', 'l', ' ', 'S', 'm', 'i', 't', 'h']
+                        let header1 = document.querySelector('.header-border')
+                        let header = document.querySelector('.header-name')
+                        
+                        function writeName1 () {
+                        
+                            for (let i = 0; i < typewriter1.length; i++) {
+                        
+                                setTimeout( () => {
+                                    header1.innerHTML += typewriter1[i];
+                                }, 150 * i);
+                            }
                         };
-                    };
-            };
-        });
+                        
+                        window.addEventListener('load', () => {
+                        
+                            writeName1();
+                        
+                            setTimeout( () => { header.style.opacity = '1'}, 3300);
+                            setTimeout( () => { header.style.transition = 'all 1s ease-out'}, 3300);
+                            setTimeout( () => { header.style.transition = ''}, 3400);
+                                
+                        });
                     </code></pre>
-                    <p>The javascript code for the fade in animation on the text on the index page.</p>
+                    <p>The javascript code for the typewriter animation on the text on the index page.</p>
                 </div>
 
                 <div class="code-2">

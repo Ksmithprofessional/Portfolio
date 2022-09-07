@@ -26,31 +26,55 @@ close.addEventListener('click', () => {
 // i think i would need to wrap every letter in a span or div
 // then add translate/scale css to each one on page load and loop through till each appear?
 // so a for loop with each letter as a .letter class and then .letter.length?
+// this top version uses the array created to loop through and create the typewriter effect
+// whereas the second version is what i made first using each letter as it's own span and looping through those
+const typewriter1 = ['M', 'y', ' ', 'n', 'a', 'm', 'e', ' ', 'i', 's', ' ', 'K', 'a', 'r', 'l', ' ', 'S', 'm', 'i', 't', 'h']
+let header1 = document.querySelector('.header-border')
+// let header2 = document.querySelector('.inline-name')
+let header = document.querySelector('.header-name')
 
-let header = document.querySelectorAll('.header-name')
+function writeName1 () {
+
+    for (let i = 0; i < typewriter1.length; i++) {
+
+        setTimeout( () => {
+            header1.innerHTML += typewriter1[i];
+        }, 150 * i);
+    }
+};
 
 window.addEventListener('load', () => {
-    for (let i = 0; i < header.length; i++) {
 
-        setTimeout( () => { header[i].style.opacity = '1'}, 100 * i);
-        setTimeout( () => { header[i].style.transition = 'all 1s ease-out'}, 100 * i);
+    writeName1();
+
+    setTimeout( () => { header.style.opacity = '1'}, 3300);
+    setTimeout( () => { header.style.transition = 'all 1s ease-out'}, 3300);
+    setTimeout( () => { header.style.transition = ''}, 3400);
         
-            if (i === header.length - 1) {
-
-                //works because it's less than header.length
-
-                for (let i = 0; i < header.length; i++) {
-
-                    //removes the transition property after it's finished
-
-                    setTimeout( () => { header[i].style.transition = ''}, 100 * i);
-                    // console.log('working');
-
-                };
-            };
-        
-    };
 });
+
+// window.addEventListener('load', () => {
+//     for (let i = 0; i < header.length; i++) {
+
+//         setTimeout( () => { header[i].style.opacity = '1'}, 100 * i);
+//         setTimeout( () => { header[i].style.transition = 'all 1s ease-out'}, 100 * i);
+        
+//             if (i === header.length - 1) {
+
+//                 //works because it's less than header.length
+
+//                 for (let i = 0; i < header.length; i++) {
+
+//                     //removes the transition property after it's finished
+
+//                     setTimeout( () => { header[i].style.transition = ''}, 100 * i);
+//                     // console.log('working');
+
+//                 };
+//             };
+        
+//     };
+// });
 
 
 // form validation

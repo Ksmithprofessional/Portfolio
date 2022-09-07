@@ -75,16 +75,16 @@
             <div class="image-content">
                 <h1>
                     <div class="header-border">
-                        <span class="header-name">M</span>
+                        <!-- <span class="header-name">M</span>
                         <span class="header-name">y</span>
                         <span class="header-name">n</span>
                         <span class="header-name">a</span>
                         <span class="header-name">m</span>
                         <span class="header-name">e</span>
                         <span class="header-name">i</span>
-                        <span class="header-name">s</span> 
+                        <span class="header-name">s</span>  -->
                         <div class="inline-name">
-                            <span class="header-name">K</span>
+                            <!-- <span class="header-name">K</span>
                             <span class="header-name">a</span>
                             <span class="header-name">r</span>
                             <span class="header-name">l</span>
@@ -92,7 +92,7 @@
                             <span class="header-name">m</span>
                             <span class="header-name">i</span>
                             <span class="header-name">t</span>
-                            <span class="header-name">h</span>
+                            <span class="header-name">h</span> -->
                         </div>
                     </div>
                 </h1>
@@ -214,6 +214,7 @@
 
                         <input type="submit" value="Submit" name="submit" id="submit">
                         <p class="error"><?php echo $error; ?></p>
+                        <p><?php echo $success; ?></p>
 
                     </fieldset>
                 </form>
