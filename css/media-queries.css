@@ -3,18 +3,26 @@
     display: inline-block;
   }
   #portfolio {
-    -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
-  #portfolio img {
+  #portfolio img:first-child {
     width: 100%;
   }
+  #portfolio .project-1 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  #portfolio .project-1 .hover-text {
+    top: 30%;
+  }
   #portfolio .project .hover-text,
-  #portfolio .project-1 .hover-text,
   #portfolio .project-2 .hover-text {
-    top: 53px;
+    top: unset;
+    bottom: 50%;
   }
 }
 
@@ -43,10 +51,13 @@
     margin-left: 10vw;
     margin-right: 0;
   }
+  #portfolio .project-1 .hover-text {
+    top: 30%;
+  }
   #portfolio .project .hover-text,
-  #portfolio .project-1 .hover-text,
   #portfolio .project-2 .hover-text {
-    top: 90px;
+    top: 15%;
+    bottom: unset;
   }
   #contact {
     margin-left: 10vw;
@@ -65,6 +76,10 @@
   .coding-container,
   .scs-container {
     margin: 0 0 0 15vw;
+  }
+  .top-image .text-container h1 {
+    font-size: 2rem;
+    top: -20px;
   }
   .about-me {
     width: 600px;
@@ -102,6 +117,20 @@
   .nav-links li a:hover {
     color: white;
   }
+  .nav-links .github {
+    width: 53px;
+    margin-bottom: 0;
+  }
+  .nav-links li:last-child {
+    width: 53px;
+    float: right;
+    margin: 0;
+    margin-top: 0px;
+    margin-top: -22px;
+  }
+  .nav-links .fa-linkedin {
+    font-size: 1.6rem;
+  }
   .header-container {
     width: 95vw;
     margin-left: 4vw;
@@ -111,17 +140,22 @@
     margin-left: 10vw;
   }
   #portfolio {
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
     width: 800px;
   }
+  #portfolio .project-1 {
+    -ms-grid-column: unset;
+        grid-column-start: unset;
+    grid-column-end: unset;
+  }
   #portfolio .project .hover-text,
   #portfolio .project-1 .hover-text,
   #portfolio .project-2 .hover-text {
-    top: 50px;
+    top: 5%;
   }
   .background-2 {
     padding: 10px 0;
@@ -161,40 +195,24 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .image-content h1 {
+  .header-image .image-content .h1 {
     font-size: 3rem;
   }
-  .image-content p {
+  .header-image .image-content p {
     font-size: 1.5rem;
   }
   #portfolio {
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
     width: 1000px;
-  }
-  #portfolio .project-1 {
-    grid-column-end: 3;
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-  }
-  #portfolio .project-2 {
-    grid-column-end: 5;
-    -ms-grid-column: 3;
-        grid-column-start: 3;
-  }
-  #portfolio .project {
-    height: 280px;
   }
   #portfolio .project .hover-text,
   #portfolio .project-1 .hover-text,
   #portfolio .project-2 .hover-text {
-    top: 163px;
-  }
-  .background-1 .container {
-    height: 800px;
+    top: 15%;
   }
   #contact {
     width: 1000px;

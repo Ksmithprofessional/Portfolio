@@ -9,11 +9,11 @@ if(isset($_POST['submit'])) {
 
 
     // filter input, escape output!
-    $fName = filter_input(INPUT_POST, 'fname', FILTER_SANITIZE_STRING);
-    $lName = filter_input(INPUT_POST, 'lname', FILTER_SANITIZE_STRING);
+    $fName = filter_input(INPUT_POST, 'fname');
+    $lName = filter_input(INPUT_POST, 'lname');
     $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
-    $subject = filter_input(INPUT_POST, 'subject', FILTER_SANITIZE_STRING);
-    $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
+    $subject = filter_input(INPUT_POST, 'subject');
+    $message = filter_input(INPUT_POST, 'message');
 
 
     try {
@@ -27,6 +27,16 @@ if(isset($_POST['submit'])) {
         $results->execute();
         $success = 'Thank you for your message!'; 
 
+        ?>
+        <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            const form = document.querySelector('form');
+
+            form.scrollIntoView({behavior: "smooth"});
+        });
+        </script>
+        <?php
+        
     } catch (Exception $e) {
 
         $error = 'Error submitting message';

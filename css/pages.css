@@ -48,7 +48,8 @@
   text-shadow: 3px 3px 0 #000, -1px -1px 0 #000,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   position: absolute;
   left: 70px;
-  top: -20px;
+  top: -13px;
+  font-size: 1.7rem;
 }
 
 .about-me h1,

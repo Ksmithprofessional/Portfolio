@@ -1,39 +1,11 @@
-// menu bar 
-
-// create html and css for menu at small Screens (nav-icons)
-// add event listener to button click
-// if button clicked, show menu bar, hide menu button
-// if button clicked again, hide menu bar (display none), bring back menu button
-
-const menu = document.querySelector('.nav-menu')
-const close = document.querySelector('.fa-times-circle')
-
-menu.addEventListener('click', () => {
-
-    document.querySelector('.nav-icons').style.left ='0px';
-    menu.style.display = 'none';
-
-});
-
-close.addEventListener('click', () => {
-
-    document.querySelector('.nav-icons').style.left ='-100px';
-    menu.style.display = 'block';
-
-});
-
-if(window.innerWidth > 767) {
-
-    document.querySelector('.nav-icons').style.left ='0px';
-}
-
 // text animation on the header text
 // i think i would need to wrap every letter in a span or div
 // then add translate/scale css to each one on page load and loop through till each appear?
 // so a for loop with each letter as a .letter class and then .letter.length?
 // this top version uses the array created to loop through and create the typewriter effect
 // whereas the second version is what i made first using each letter as it's own span and looping through those
-const typewriter1 = ['M', 'y', ' ', 'n', 'a', 'm', 'e', ' ', 'i', 's', ' ', 'K', 'a', 'r', 'l', ' ', 'S', 'm', 'i', 't', 'h']
+const text = 'My name is Karl Smith';
+const typewriter1 = Array.from(text);
 let header1 = document.querySelector('.header-border')
 // let header2 = document.querySelector('.inline-name')
 let header = document.querySelector('.header-name')
@@ -98,6 +70,7 @@ form.addEventListener('submit', (e) => {
 
     let email = document.querySelector('.email input').value;
     let emailStar = document.querySelector('.e-star')
+    let enquiryEmailField = document.querySelector('input[id="email"]');
     const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
     if(!email.match(regex)) {
@@ -105,12 +78,21 @@ form.addEventListener('submit', (e) => {
         e.preventDefault();
         document.querySelector('.error').innerHTML = `<i class="far fa-times-circle"></i> Invalid email address`;
         emailStar.style.color = 'red';
+        enquiryEmailField.style.border = '1px solid red';
         // console.log(email);
         // test to see whether the email address actually shows up on failure
+
+    } else if(email === '') {
+
+        e.preventDefault();
+        document.querySelector('.error').innerHTML = `<i class="far fa-times-circle"></i> Please fill in required fields`;
+        Star.style.color = 'red';
+        enquiryEmailField.style.border = '1px solid red';
 
     } else {
 
         emailStar.style.color = 'black';
+        enquiryEmailField.style.border = 'unset';
     }
 });
 
@@ -118,16 +100,19 @@ form.addEventListener('submit', (e) => {
 
     let name = document.querySelector('.fname input').value;
     let Star = document.querySelector('.name-star');
+    let enquiryNameField = document.querySelector('input[id="fname"]');
 
     if(name === '') {
 
         e.preventDefault();
         document.querySelector('.error').innerHTML = `<i class="far fa-times-circle"></i> Please fill in required fields`;
         Star.style.color = 'red';
+        enquiryNameField.style.border = '1px solid red';
 
     } else {
 
         Star.style.color = 'black';
+        enquiryNameField.style.border = 'unset';
     }
 });
 
@@ -135,29 +120,41 @@ form.addEventListener('submit', (e) => {
 
     let message = document.querySelector('.message textarea').value;
     let Star = document.querySelector('.mess-star');
+    let enquiryMessageField = document.querySelector('textarea[id="message"]');
 
     if(message === '') {
 
         e.preventDefault();
         document.querySelector('.error').innerHTML = `<i class="far fa-times-circle"></i> Please fill in required fields`;
         Star.style.color = 'red';
+        enquiryMessageField.style.border = '1px solid red';
 
     } else {
 
         Star.style.color = 'black';
+        enquiryMessageField.style.border = 'unset';
     }
 });
 
-form.addEventListener('submit', (e) => {
+// form.addEventListener('submit', (e) => {
 
-    let email = document.querySelector('.email input').value;
-    let Star = document.querySelector('.e-star');
+//     let email = document.querySelector('.email input').value;
+//     let Star = document.querySelector('.e-star');
 
-    if(email === '') {
+//     if(email === '') {
 
-        e.preventDefault();
-        document.querySelector('.error').innerHTML = `<i class="far fa-times-circle"></i> Please fill in required fields`;
-        Star.style.color = 'red';
+//         e.preventDefault();
+//         document.querySelector('.error').innerHTML = `<i class="far fa-times-circle"></i> Please fill in required fields`;
+//         Star.style.color = 'red';
 
-    }
-});
+//     }
+// });
+
+//scroll to form on post page reload
+
+// function scrollToForm() {
+
+//     const form = document.querySelector('form');
+
+//     form.scrollIntoView({behavior: "smooth"});
+// }

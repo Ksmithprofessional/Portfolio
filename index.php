@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A web development portfolio by Karl Smith | Homepage">
     <title>Karl Smith's portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/portfolio-favicon.png">
     <link rel="stylesheet" href="css/Normalise.css">
     <link rel="stylesheet" href="css/base.css">
     <script src="https://kit.fontawesome.com/cc1e8c8726.js" crossorigin="anonymous"></script>
@@ -25,7 +27,7 @@
     <nav>
 
         <div class="nav-menu">
-            <i class="fa-solid fa-bars fa-2xl"></i></a>
+            <i class="fa-solid fa-bars fa-2xl"></i>
         </div>
 
         <div class="nav-icons" style="left: -100px;">
@@ -34,13 +36,48 @@
             <a href="#"><div class="logo">
                 <p>KS</p>
             </div></a>
-
-            <a href="html/about-me.html" title="About me"><i class="fa-solid fa-person fa-2xl"></i></a>
-            <a href="#portfolio" title="Portfolio"><i class="fa-solid fa-copy fa-xl"></i></a>
-            <a href="html/coding-examples.html" title="Coding Examples"><i class="fa-solid fa-code fa-xl"></i></a>
-            <a href="html/scs-scheme.html" title="SCS Scheme"><i class="fa-solid fa-school fa-xl"></i></a>
-            <a href="#contact" title="Contact"><i class="fa-solid fa-comment-dots fa-xl"></i></a>
-            <a href="https://github.com/Ksmithprofessional" title="Github"><i class="fab fa-github-square fa-2xl"></i></a>
+            <div class="link-sm">
+                <a href="html/about-me.html" title="About me"><i class="fa-solid fa-person fa-2xl"></i></a>
+                <div class="hover-link">
+                    <p><a href="html/about-me.html" title="About me">About me</a></p>
+                </div>
+            </div>
+            <div class="link-sm">
+                <a href="#portfolio" title="Portfolio"><i class="fa-solid fa-copy fa-xl"></i></a>
+                <div class="hover-link">
+                    <p><a href="#portfolio" title="Portfolio">Portfolio</a></p>
+                </div>
+            </div>
+            <div class="link-sm">
+                <a href="html/coding-examples.html" title="Coding Examples"><i class="fa-solid fa-code fa-xl"></i></a>
+                <div class="hover-link">
+                    <p><a href="html/coding-examples.html" title="Coding Examples">Code examples</a></p>
+                </div>
+            </div>
+            <div class="link-sm">
+                <a href="html/scs-scheme.html" title="SCS Scheme"><i class="fa-solid fa-school fa-xl"></i></a>
+                <div class="hover-link">
+                    <p><a href="html/scs-scheme.html" title="SCS Scheme">SCS Scheme</a></p>
+                </div>
+            </div>
+            <div class="link-sm">
+                <a href="#contact" title="Contact"><i class="fa-solid fa-comment-dots fa-xl"></i></a>
+                <div class="hover-link">
+                    <p><a href="#contact" title="Contact">Contact</a></p>
+                </div>
+            </div>
+            <div class="link-sm">
+                <a href="https://github.com/Ksmithprofessional" title="Github" target="_blank"><i class="fab fa-github-square fa-2xl"></i></a>
+                <div class="hover-link">
+                    <p><a href="https://github.com/Ksmithprofessional" title="Github" target="_blank">Github</a></p>
+                </div>
+            </div>
+            <div class="link-sm">
+                <a href="https://www.linkedin.com/in/karl-smith-0b477a252/" title="Linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <div class="hover-link">
+                    <p class="last-link"><a href="https://www.linkedin.com/in/karl-smith-0b477a252/" title="Linkedin" target="_blank">LinkedIn</a></p>
+                </div>
+            </div>
 
             <i class="far fa-times-circle"></i>
         </div>
@@ -60,7 +97,8 @@
 
                 <!-- social media links -->
 
-                <li><a href="https://github.com/Ksmithprofessional" title="Github" target="_blank"><i class="fab fa-github-square fa-2xl"></i></a></li>
+                <li class="github"><a href="https://github.com/Ksmithprofessional" title="Github" target="_blank"><i class="fab fa-github-square fa-2xl"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/karl-smith-0b477a252/" title="Linkedin" target="_blank"><i class="fab fa-linkedin"></i></a></li>
             </ul>
 
         </div>
@@ -73,7 +111,7 @@
     <div class="header-image">
         <div class="header-container">
             <div class="image-content">
-                <h1>
+                <div class="h1">
                     <div class="header-border">
                         <!-- <span class="header-name">M</span>
                         <span class="header-name">y</span>
@@ -95,7 +133,7 @@
                             <span class="header-name">h</span> -->
                         </div>
                     </div>
-                </h1>
+                </div>
                 <p class="header-name">I'm a web developer</p>
             </div>
 
@@ -118,52 +156,52 @@
                     <a href="http://netmatters.karl-smith.netmatters-scs.co.uk/" target="_blank"><img src="images/netmatters-website.png" alt="My version of the netmatters homepage"></a>
                     <div class="hover-text">
                         <p>
-                            I was tasked with recreating the netmatters homepage from scratch, as closely as i could.
-                            Here is my attempt.
+                            Using html, sass, javascript, and php, I recreated the netmatters homepage from scratch, as closely as i could.
+                            I think i got as close to perfect as i could.
                         </p>
                     </div>
                     <h3>Recreating the Netmatters homepage</h3>
-                    <a href="http://netmatters.karl-smith.netmatters-scs.co.uk/"><p>View Project <i class="fas fa-arrow-right"></i></p></a>
+                    <div class="project-langs">
+                        <img class="lang" src="images/HTML5.png">
+                        <img class="lang" src="images/javascript.png">
+                        <img class="lang" src="images/PHP.png">
+                    </div>
+                    <a href="http://netmatters.karl-smith.netmatters-scs.co.uk/" target="_blank"><p>View Project <i class="fas fa-arrow-right"></i></p></a>
                 </div>
 
                 <div class="project-2">
 
-                    <a href="https://ksmithprofessional.github.io/Array-reflection/"><img src="images/array-reflection.png" alt="My array reflection webpage"></a>
+                    <a href="https://ksmithprofessional.github.io/Array-reflection/" target="_blank"><img src="images/array-reflection.png" alt="My array reflection webpage"></a>
                     <div class="hover-text">
                         <p>
-                            I was tasked with creating a small website that would pull a random image and link it to a user inputted email address.
+                            Using html, sass, and javascript, I created a small website that would pull a random image using javascript's fetch api and link it to a user inputted email address.
                         </p>
                     </div>
                     <h3>Array reflection</h3>
-                    <a href="https://ksmithprofessional.github.io/Array-reflection/"><p>View Project <i class="fas fa-arrow-right"></i></p></a>
+                    <div class="project-langs">
+                        <img class="lang" src="images/HTML5.png">
+                        <img class="lang" src="images/javascript.png">
+                    </div>
+                    <a href="https://ksmithprofessional.github.io/Array-reflection/" target="_blank"><p>View Project <i class="fas fa-arrow-right"></i></p></a>
                 </div>
 
                 <div class="project">
 
-                    <a href="#"><img src="images/radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.jpg" alt="Project Three"></a>
-                    <h3>Project Three</h3>
-                    <a href="#"><p>View Project <i class="fas fa-arrow-right"></i></p></a>
-                </div>
-
-                <div class="project">
-
-                    <a href="#"><img src="images/radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.jpg" alt="Project Four"></a>
-                    <h3>Project Four</h3>
-                    <a href="#"><p>View Project <i class="fas fa-arrow-right"></i></p></a>
-                </div>
-
-                <div class="project">
-
-                    <a href="#"><img src="images/radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.jpg" alt="Project Five"></a>
-                    <h3>Project Five</h3>
-                    <a href="#"><p>View Project <i class="fas fa-arrow-right"></i></p></a>
-                </div>
-
-                <div class="project">
-
-                    <a href="#"><img src="images/radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.jpg" alt="Project Six"></a>
-                    <h3>Project Six</h3>
-                    <a href="#"><p>View Project <i class="fas fa-arrow-right"></i></p></a>
+                    <a href="http://wordpress.karl-smith.netmatters-scs.co.uk/" target="_blank"><img src="images/wordpress.png" alt="My Wordpress site"></a>
+                    <div class="hover-text">
+                        <p>
+                            I created a wordpress site based around my ebay shop. I created a child theme with html, css, javascript, and php, and created a woocommerce shop.
+                        </p>
+                    </div>
+                    
+                    <h3>Wordpress Reflection</h3>
+                    <div class="project-langs">
+                        <img class="lang" src="images/HTML5.png">
+                        <img class="lang" src="images/javascript.png">
+                        <img class="lang" src="images/PHP.png">
+                        <img class="lang" src="images/Wordpress_Blue_logo.png">
+                    </div>
+                    <a href="http://wordpress.karl-smith.netmatters-scs.co.uk/" target="_blank"><p>View Project <i class="fas fa-arrow-right"></i></p></a>
                 </div>
 
             </div>
@@ -172,9 +210,7 @@
 
 
     <!-- contact form -->
-    <?php 
-        include 'php/insert.php'; 
-    ?>
+    
 
     <div class="background-2">
         <div class="container">
@@ -182,11 +218,15 @@
 
                 <div class="get-in-touch">
                     <h3>Get in touch</h3>
-                    <p>If you would like to contact me, please do over at:</p>
+                    <p>If you would like to contact me, you can do so here:</p>
                     <a href="mailto:k_m_s@hotmail.co.uk">k_m_s@hotmail.co.uk</a>
                     <p>Or, you can use the contact form and i'll get back to you as soon as i can</p>
 
                 </div>
+
+                <?php 
+                include 'php/insert.php'; 
+                ?>
 
                 <form action="#" method="post">
 
@@ -220,6 +260,8 @@
                 </form>
             </div>
 
+           
+
             <div class="top">
                 <a href="#"><i class="fa-solid fa-angle-up fa-2xl"></i> <br>
                 Back to top</a>
@@ -227,5 +269,6 @@
         </div>
     </div>
 <script src="js/main.js"></script>
+<script src="js/menu.js"></script>
 </body>
 </html>
