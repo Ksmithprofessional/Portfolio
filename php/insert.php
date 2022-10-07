@@ -29,7 +29,7 @@ if(isset($_POST['submit'])) {
 
         ?>
         <script>
-        document.addEventListener("DOMContentLoaded", function(){
+        window.addEventListener("load", (event) => {
             const form = document.querySelector('form');
 
             form.scrollIntoView({behavior: "smooth"});
