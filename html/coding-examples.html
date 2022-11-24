@@ -148,28 +148,28 @@
                     <h3>A soundboard</h3>
                 
                     <pre><code class="language-js">
-        const sound1 = document.querySelector('.sound-1')
-        const sound2 = document.querySelector('.sound-2')
+                        const sound1 = document.querySelector('.sound-1')
+                        const sound2 = document.querySelector('.sound-2')
 
 
-        document.addEventListener('keydown', logKey);
+                        document.addEventListener('keydown', logKey);
 
-        function logKey(e) {
+                        function logKey(e) {
 
-            if (e.keyCode === 49) {
+                            if (e.keyCode === 49) {
 
-                //digit 1
+                                //digit 1
 
-                sound1.play();
+                                sound1.play();
 
-            } if (e.keyCode === 50) {
+                            } if (e.keyCode === 50) {
 
-                //digit 2
+                                //digit 2
 
-                sound2.play();
+                                sound2.play();
 
-            }
-        };
+                            }
+                        };
                     </code></pre>
                     <p>A snippet of code from a soundboard I made for myself. Press the right key, and a sound effect that's linked to it will play.</p>
                 </div>
@@ -181,20 +181,19 @@
                     <img class ="database" src="../images/soccer-database.png" alt="Football database used in the SQL challenge">
                 
                     <pre><code class="language-sql">
-        
-        SELECT 
-            DISTINCT player_name AS "Player Name", 
-            posi_to_play AS "Position", 
-            jersey_no AS "Shirt Number", 
-            player_id
-        FROM player_mast
-        WHERE player_id IN (
-            SELECT player_id 
-        FROM player_booked
-            WHERE sent_off = 'Y'
-        )
-        ORDER BY player_id ASC
-        ;
+                        SELECT 
+                            DISTINCT player_name AS "Player Name", 
+                            posi_to_play AS "Position", 
+                            jersey_no AS "Shirt Number", 
+                            player_id
+                        FROM player_mast
+                        WHERE player_id IN (
+                            SELECT player_id 
+                        FROM player_booked
+                            WHERE sent_off = 'Y'
+                        )
+                        ORDER BY player_id ASC
+                        ;
 
                     </code></pre>
                     <p>
@@ -214,6 +213,120 @@
                     </p>
                     <img src="../images/sendings-off.png" alt="Players who got sent off">
                 </div>
+
+                <div class="code-4">
+                    <h3>Laravel CRUD functionality (create)</h3>
+                    <pre><code class="language-php">
+                        public function store(companies $company)
+                        {
+                    
+                            if(request('logo') == null) {
+                    
+                                companies::insert([$this->companyRules()]);
+                    
+                            } else {
+                    
+                                companies::insert([
+                                    array_merge($this->companyRules(), [
+                                        'logo' => request()->file('logo')->store('public')
+                                    ]
+                                )]);
+                            }
+                    
+                            return redirect('/companies');
+                        }
+
+                        protected function companyRules()
+                        {
+                            return request()->validate([
+                                'name' => 'required|max:255',
+                                'email' => 'nullable|email',
+                                'logo' => 'nullable|image|dimensions:min_width=100,min_height=100',
+                                'website' => 'nullable|url'
+                            ]);
+                        }
+
+                    </code></pre>
+
+                    <p>
+                        We were tasked with creating an admin site to store a list of companies and their
+                        employees using laravel, and this is the create function from it.
+                    </p>
+                    <p>
+                        When you submit the form to add a company, the store method checks to see if 
+                        there's a logo being inserted (this check is required since the logo field is nullable
+                        and the store method cannot be null) and then calls the company rules validation method. 
+                    </p>
+                    <p>
+                        After applying the specific validation rules we need, the store method then uses 
+                        laravel's insert method to create a behind the scenes sql query to insert the validated
+                        input. If there is a logo being inserted, then we call the store method and create a
+                        symbolic link between our storage folder, and our public folder, so we can store 
+                        and display the logo in our site.
+                    </p>
+                    <p>
+                        If you'd like to view this project, it's on my github profile <a href="https://github.com/Ksmithprofessional/laravel-admin" target="_blank">here</a>
+                    </p>
+
+                </div>
+
+                <div class="code-5">
+                    <h3>A space invaders/battleships style javascript game</h3>
+                    <pre><code class="language-js">
+                        const enemy1 = document.querySelector(".enemy-1");
+                        const enemy2 = document.querySelector(".enemy-2");
+                        const enemy3 = document.querySelector(".enemy-3");
+                        const enemy1Ex = document.querySelector(".enemy-1-explode");
+                        const enemy2Ex = document.querySelector(".enemy-2-explode");
+                        const enemy3Ex = document.querySelector(".enemy-3-explode");
+
+                        let leftNums = [0, 50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 950, 1000];
+                        let bottomNums = [55, 105, 155, 205, 255, 305, 355, 405, 455, 505];
+
+                        let leftPos1 = leftNums[Math.floor(Math.random() * 20) + 1];
+                        let bottomPos1 = bottomNums[Math.floor(Math.random() * 9) + 1];
+                        let leftPos2 = leftNums[Math.floor(Math.random() * 20) + 1];
+                        let bottomPos2 = bottomNums[Math.floor(Math.random() * 9) + 1];
+                        let leftPos3 = leftNums[Math.floor(Math.random() * 20) + 1];
+                        let bottomPos3 = bottomNums[Math.floor(Math.random() * 9) + 1];
+
+                        enemy1.style.left = leftPos1 + "px";
+                        enemy1.style.bottom = bottomPos1 + "px";
+                        enemy1Ex.style.left = leftPos1 + "px";
+                        enemy1Ex.style.bottom = bottomPos1 + "px";
+                        enemy2.style.left = leftPos2 + "px";
+                        enemy2.style.bottom = bottomPos2 + "px";
+                        enemy2Ex.style.left = leftPos2 + "px";
+                        enemy2Ex.style.bottom = bottomPos2 + "px";
+                        enemy3.style.left = leftPos3 + "px";
+                        enemy3.style.bottom = bottomPos3 + "px";
+                        enemy3Ex.style.left = leftPos3 + "px";
+                        enemy3Ex.style.bottom = bottomPos3 + "px";
+                    </code></pre>
+                    <p>
+                        I made a game built entirely in html/css/javascript based on a space invaders 
+                        and battleships crossover i had.
+                    </p>
+                    <p>
+                        Basically, you control a small ship searching for invisible enemy ships aiming to shoot them down.
+                        Your ship can move left and right across a 21 column grid, and fire upwards to hit enemies (the space invaders part).
+                        The enemy ships are invisible, and it's your job to shoot the correct column to destroy them (the battleships part).
+                        You have ten shots to find three enemy ships, and once your ten shots are fired, if you haven't destroyed the enemy ships, then it's game over.
+                    </p>
+                    <p>
+                        The code above is for randomising the enemy ship positions at the start of the game.
+                        The arrays store the positions based on css absolute positioning values, and the math.random functions
+                        pull a random number from those array of positions, and apply them to the left and bottom positions of the enemy ships.
+                    </p>
+                    <p>
+                        As of writing, there are some bugs with the game, and some improvements i'd like to make (graphical things, and i'd like to add a leaderboard of some kind with php)
+                        but it's in a playable state, so, as the games industry likes to say, those aren't bugs, they're "features".
+                    </p>
+                    <p> 
+                        If you'd like to play it, it's on github pages <a href="https://ksmithprofessional.github.io/Space-invaders-battleships/" target="_blank">here</a>
+                    </p>
+                </div>
+
              </div>
 
         </div>

@@ -111,13 +111,17 @@ pre code[class*="language-"] {
 
 .code-1,
 .code-2,
-.code-3 {
+.code-3,
+.code-4,
+.code-5 {
   margin: 25px 0;
 }
 
 .code-1 h3,
 .code-2 h3,
-.code-3 h3 {
+.code-3 h3,
+.code-4 h3,
+.code-5 h3 {
   border-bottom: 1px solid black;
   width: -webkit-fit-content;
   width: -moz-fit-content;
