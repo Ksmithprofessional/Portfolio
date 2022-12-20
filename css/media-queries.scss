@@ -15,18 +15,19 @@
             width: 100%;
         }
 
-        & .project-1 {
+        // & .project-1 {
 
-            grid-column-start: 1;
-            grid-column-end: 3;
+        //     grid-column-start: 1;
+        //     grid-column-end: 3;
 
-            & .hover-text {
+        //     & .hover-text {
 
-                top: 30%;
-            }
-        }
+        //         top: 30%;
+        //     }
+        // }
 
         & .project,
+        & .project-1,
         & .project-2 {
 
             & .hover-text {
@@ -80,15 +81,16 @@
         margin-left: 10vw;
         margin-right: 0;
 
-        & .project-1 {
+        // & .project-1 {
 
-            & .hover-text {
+        //     & .hover-text {
 
-                top: 30%;
-            }
-        }
+        //         top: 30%;
+        //     }
+        // }
 
         & .project,
+        & .project-1,
         & .project-2 {
 
             & .hover-text {
@@ -233,26 +235,26 @@
 
     #portfolio {
 
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+        // grid-template-rows: 1fr;
+        // grid-template-columns: 1fr 1fr 1fr;
         margin: 0 auto;
         width: 800px;
 
-        & .project-1 {
+        // & .project-1 {
 
-            grid-column-start: unset;
-            grid-column-end: unset;
-        }
+        //     grid-column-start: unset;
+        //     grid-column-end: unset;
+        // }
 
-        & .project,
-        & .project-1,
-        & .project-2 {
+        // & .project,
+        // & .project-1,
+        // & .project-2 {
 
-            & .hover-text {
+        //     & .hover-text {
 
-                top: 5%;
-            }
-        }
+        //         top: 5%;
+        //     }
+        // }
     }
 
     .background-2 {
@@ -338,6 +340,8 @@
         margin: 0 auto;
         width: 1000px;
 
+        //various styling for different grid layouts
+
         // & .project-1 {
 
         //     grid-column-end: 3;
@@ -357,15 +361,22 @@
         //     height: 280px;
         // }
 
-        & .project,
-        & .project-1,
-        & .project-2 {
+        // & .project-1 {
 
-            & .hover-text {
+        //     & .hover-text {
 
-                top: 15%;
-            }
-        }
+        //         top: 40%;
+        //     }
+        // }
+
+        // & .project,
+        // & .project-2 {
+
+        //     & .hover-text {
+
+        //         top: 25%;
+        //     }
+        // }
     }
 
     // .background-1 {

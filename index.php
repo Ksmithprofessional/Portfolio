@@ -204,6 +204,60 @@
                     <a href="http://wordpress.karl-smith.netmatters-scs.co.uk/" target="_blank"><p>View Project <i class="fas fa-arrow-right"></i></p></a>
                 </div>
 
+                <div class="project">
+
+                    <a href="http://laravel.karl-smith.netmatters-scs.co.uk/" target="_blank"><img src="images/laravel.png" alt="A Laravel admin site"></a>
+                    <div class="hover-text">
+                        <p>
+                            I created an admin site using laravel with CRUD functionality for a list of companies and employees. Feel free to ask if you want the login details. 
+                        </p>
+                    </div>
+                    
+                    <h3>Laravel admin site</h3>
+                    <div class="project-langs">
+                        <img class="lang" src="images/HTML5.png">
+                        <img class="lang" src="images/javascript.png">
+                        <img class="lang" src="images/PHP.png">
+                        <img class="lang" src="images/laravel-icon.png">
+                    </div>
+                    <a href="http://laravel.karl-smith.netmatters-scs.co.uk/" target="_blank"><p>View Project <i class="fas fa-arrow-right"></i></p></a>
+                </div>
+
+                <div class="project">
+
+                    <a href="http://javascriptgame.karl-smith.netmatters-scs.co.uk/" target="_blank"><img src="images/spaceinvadersjs.png" alt="A Javascript game"></a>
+                    <div class="hover-text">
+                        <p>
+                            I created a game based on a crossover between space invaders and battleships using javascript. You can play it here.
+                        </p>
+                    </div>
+                    
+                    <h3>Javascript game</h3>
+                    <div class="project-langs">
+                        <img class="lang" src="images/HTML5.png">
+                        <img class="lang" src="images/javascript.png">
+                    </div>
+                    <a href="http://javascriptgame.karl-smith.netmatters-scs.co.uk/" target="_blank"><p>View Project <i class="fas fa-arrow-right"></i></p></a>
+                </div>
+
+                <div class="project">
+
+                    <a href="http://vue.karl-smith.netmatters-scs.co.uk/" target="_blank"><img src="images/vue-project.png" alt="A vue SPA"></a>
+                    <div class="hover-text">
+                        <p>
+                            I created an SPA in vue 3, using the ACNH API. It shows info for the game Animal crossing new horizons.
+                        </p>
+                    </div>
+                    
+                    <h3>Vue SPA</h3>
+                    <div class="project-langs">
+                        <img class="lang" src="images/HTML5.png">
+                        <img class="lang" src="images/javascript.png">
+                        <img class="lang" src="images/vue-logo-1.png">
+                    </div>
+                    <a href="http://vue.karl-smith.netmatters-scs.co.uk/" target="_blank"><p>View Project <i class="fas fa-arrow-right"></i></p></a>
+                </div>
+
             </div>
         </div>
     </div>

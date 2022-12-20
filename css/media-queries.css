@@ -11,15 +11,8 @@
   #portfolio img:first-child {
     width: 100%;
   }
-  #portfolio .project-1 {
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 3;
-  }
-  #portfolio .project-1 .hover-text {
-    top: 30%;
-  }
   #portfolio .project .hover-text,
+  #portfolio .project-1 .hover-text,
   #portfolio .project-2 .hover-text {
     top: unset;
     bottom: 50%;
@@ -51,10 +44,8 @@
     margin-left: 10vw;
     margin-right: 0;
   }
-  #portfolio .project-1 .hover-text {
-    top: 30%;
-  }
   #portfolio .project .hover-text,
+  #portfolio .project-1 .hover-text,
   #portfolio .project-2 .hover-text {
     top: 15%;
     bottom: unset;
@@ -140,22 +131,8 @@
     margin-left: 10vw;
   }
   #portfolio {
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
     width: 800px;
-  }
-  #portfolio .project-1 {
-    -ms-grid-column: unset;
-        grid-column-start: unset;
-    grid-column-end: unset;
-  }
-  #portfolio .project .hover-text,
-  #portfolio .project-1 .hover-text,
-  #portfolio .project-2 .hover-text {
-    top: 5%;
   }
   .background-2 {
     padding: 10px 0;
@@ -208,11 +185,6 @@
         grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
     width: 1000px;
-  }
-  #portfolio .project .hover-text,
-  #portfolio .project-1 .hover-text,
-  #portfolio .project-2 .hover-text {
-    top: 15%;
   }
   #contact {
     width: 1000px;
