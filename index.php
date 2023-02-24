@@ -258,6 +258,26 @@
                     <a href="http://vue.karl-smith.netmatters-scs.co.uk/" target="_blank"><p>View Project <i class="fas fa-arrow-right"></i></p></a>
                 </div>
 
+                <div class="project project-last">
+
+                    <a href="http://vuelaravel.karl-smith.netmatters-scs.co.uk/" target="_blank"><img src="images/quote-builder.png" alt="A vue + laravel SPA"></a>
+                    <div class="hover-text">
+                        <p>
+                            I created an SPA with vue and laravel, which allows you to build a custom pc, totals up the cost, and sends an email on checkout. 
+                        </p>
+                    </div>
+
+                    <h3>Quote Builder SPA</h3>
+                    <div class="project-langs">
+                        <img class="lang" src="images/HTML5.png">
+                        <img class="lang" src="images/javascript.png">
+                        <img class="lang" src="images/vue-logo-1.png">
+                        <img class="lang" src="images/PHP.png">
+                        <img class="lang" src="images/laravel-icon.png">
+                    </div>
+                    <a href="http://vuelaravel.karl-smith.netmatters-scs.co.uk/" target="_blank"><p>View Project <i class="fas fa-arrow-right"></i></p></a>
+                </div>
+
             </div>
         </div>
     </div>

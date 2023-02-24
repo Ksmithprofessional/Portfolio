@@ -186,6 +186,9 @@
     margin: 0 auto;
     width: 1000px;
   }
+  #portfolio .project-last {
+    grid-column-end: 3;
+  }
   #contact {
     width: 1000px;
   }

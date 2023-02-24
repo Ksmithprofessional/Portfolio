@@ -377,6 +377,10 @@
         //         top: 25%;
         //     }
         // }
+
+        & .project-last {
+            grid-column-end: 3;
+        }
     }
 
     // .background-1 {

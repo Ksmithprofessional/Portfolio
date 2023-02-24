@@ -327,6 +327,123 @@
                     </p>
                 </div>
 
+                <div class="code-5">
+                    <h3>A car class in c#</h3>
+                    <pre><code class="language-cs">
+                        namespace Car
+                        {
+
+                            public class Car
+                            {
+                                // auto properties (get set) 
+
+                                public string CarMake { get; private set; } = "Hello";
+                                
+                                public string CarModel { get; private set; } = "World";
+                                
+                                public int Registration { get; private set; }
+                                
+                                public int initialRegistration { get; private set; }
+                                
+                                public int CurrentValue { get; private set; }
+                                
+
+                                //constructor
+                                public Car(string Make, string Model, int Registration, int InitialRegistration, int Value) 
+                                {
+                                    SetMake(Make);
+                                    SetModel(Model);
+                                    SetRegistration(Registration);
+                                    SetInitialRegistration(InitialRegistration);
+                                    SetCurrentValue(Value);
+                                }
+
+                                public override string ToString(){
+
+                                    return 
+                                    "Manufacturer: " + this.CarMake + 
+                                    " " + 
+                                    "Model: " + this.CarModel + 
+                                    " " + 
+                                    "Registration: " + this.Registration + 
+                                    " " + 
+                                    "Initial Registration: " + this.initialRegistration + 
+                                    " " + 
+                                    "Current Value: £" + this.CurrentValue;
+                                }  
+
+                                //setter methods
+                                private string SetMake(string Make)
+                                {
+                                    this.CarMake = Make;
+                                    return this.CarMake;
+                                }
+
+                                private string SetModel(string Model)
+                                {
+                                    this.CarModel = Model;
+                                    return this.CarModel;
+                                }
+
+                                private int SetRegistration(int Registration)
+                                {
+                                    this.Registration = Registration;
+                                    return this.Registration;
+                                }
+
+                                private int SetInitialRegistration(int initialRegistration)
+                                {
+                                    this.initialRegistration = initialRegistration;
+                                    return this.initialRegistration;
+                                }
+
+                                private int SetCurrentValue(int CurrentValue)
+                                {
+                                    this.CurrentValue = CurrentValue;
+                                    return this.CurrentValue;
+                                }
+
+                                //getter methods
+                                public string GetMake()
+                                {
+                                    return this.CarMake;
+                                }
+
+                                public string GetModel()
+                                {
+                                    return this.CarModel;
+                                }
+
+                                public int GetRegistration()
+                                {
+                                    return this.Registration;
+                                }
+
+                                public int GetInitialRegistration()
+                                {
+                                    return this.initialRegistration;
+                                }
+
+                                public int GetCurrentValue()
+                                {
+                                    return this.CurrentValue;
+                                }
+                                
+                            }
+
+                        }
+                    </code></pre>
+                    <p>
+                        This is a class i made in c#. It contains a constructor to instantiate a car
+                        object, setter methods to set the values of the car, getter methods to get those values,
+                        and a method to override the inherited Object.ToString method to write out 
+                        the details of the car.
+                    </p>
+                    <p>
+                        You can view the whole code for this <a href="https://github.com/Ksmithprofessional/c--car" target="_blank">here</a>
+                    </p>
+                </div>
+
              </div>
 
         </div>
